@@ -1,0 +1,208 @@
+@font-face {
+  font-family: 'DIN Pro Condensed Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DIN Pro Condensed Regular'), url('DINPro-Cond.woff') format('woff');
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family:'DIN Pro Condensed Regular';
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-md {
+  width: 150px;
+  height: 223px;
+}
+
+/*450x669*/
+
+/*----------------------------------------------------------------------*/
+
+img.player,img.nation,img.badge,.rating,.position,.name,
+.pace,.shooting,.passing,.dribbling,.defending,.physical,
+.divider-nat,.divider-bad,.divider-nam,.divider-att,.divider-che {
+  position: absolute;
+}
+
+.card.card-md img.player {
+  top: 10.7%;
+  left: 32%;
+  width: 63.4%;
+}
+
+.card.card-md img.nation {
+  top: 33.1%;
+  left: 16%;
+  width: 12.6%;
+}
+
+.card.card-md img.badge {
+  top: 42%;
+  left: 15.2%;
+  width: 14%;
+}
+
+.card.card-md .rating {
+  width: 15%;
+  top: 10.8%;
+  left: 14.6%;
+  font-size: 30px;
+}
+
+.card .position {
+  font-weight: lighter;
+  width: 15%;
+  top: 23.8%;
+  left: 14.6%;
+}
+
+.card.card-md .position {
+  font-size: 88%;
+}
+
+.card.card-md .name {
+  width: 136px;
+  top: 120px;
+  left: 7px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+}
+
+.card .pace,.shooting,.passing,.dribbling,.defending,.physical {
+  text-align: left;
+  width: 33%;
+}
+
+.card .pace,.shooting,.passing {
+  left: 18%;
+}
+
+.card .dribbling,.defending,.physical {
+  left: 62%;
+}
+
+.card.card-md .pace,.shooting,.passing,.dribbling,.defending,.physical {
+  font-size: 86%;
+}
+
+.card .pace::after,.shooting::after,.passing::after,.dribbling::after,.defending::after,.physical::after {
+  white-space: pre;
+  font-weight: lighter;
+}
+
+.card .pace {
+  top: 64.5%;
+}
+
+.card .shooting {
+  top: 71.5%;
+}
+
+.card .passing {
+  top: 78.5%;
+}
+
+.card .dribbling {
+  top: 64.5%;
+}
+
+.card .defending {
+  top: 71.5%;
+}
+
+.card .physical {
+  top: 78.5%;
+}
+
+.card .pace::after {
+  content: " PAC";
+}
+
+.card .shooting::after {
+  content: " SHO";
+}
+
+.card .passing::after {
+  content: " PAS";
+}
+
+.card .dribbling::after {
+  content: " DRI";
+}
+
+.card .defending::after {
+  content: " DEF";
+}
+
+.card .physical::after {
+  content: " PHY";
+}
+
+
+/*----------------------------------------------------------------------*/
+
+.card .divider-nat {
+  top: 31.4%;
+  left: 17.3%;
+  width: 10%;
+  height: 0.3%;
+}
+
+.card .divider-bad {
+  top: 39.9%;
+  left: 17.3%;
+  width: 10%;
+  height: 0.3%;
+}
+
+.card .divider-nam {
+  top: 62.5%;
+  left: 17.3%;
+  width: 66%;
+  height: 0.3%;
+}
+
+.card .divider-att {
+  top: 65.5%;
+  left: 49.7%;
+  width: 1%;
+  height: 20%;
+}
+
+.card .divider-che {
+  top: 88%;
+  left: 44%;
+  width: 12%;
+  height: 0.3%;
+}
+
+.gold-nif .divider-nat,.divider-bad,.divider-nam,.divider-att,.divider-che {
+  /*background: #3f3205;*/
+  background: linear-gradient(to right, rgba(102,92,8,0.3) 0%,rgba(102,92,8,0.8) 15%,rgba(102,92,8,1) 19%,rgba(56,44,4,1) 51%,rgba(102,92,8,1) 81%,rgba(102,92,8,0.8) 85%,rgba(102,92,8,0.3) 100%);
+  opacity: 0.8;
+}
+
+.ucl-live .divider-nat,.divider-bad,.divider-nam,.divider-att,.divider-che {
+  background: #c6c9e2;
+  opacity: 0.5;
+}
+
+/*----------------------------------------------------------------------*/
+
+.gold-nif {
+  background-image: url("../assets/cards/gold-nif.png");
+  color: #3f3205;
+}
+
+.ucl-live {
+  background-image: url("../assets/cards/ucl-live.png");
+  color: #ffffff;
+}
