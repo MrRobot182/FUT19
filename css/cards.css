@@ -17,44 +17,53 @@
   font-weight: bold;
 }
 
+.card-sm {
+  width: 115px;
+  height: 171px;
+}
+
 .card-md {
   width: 150px;
   height: 223px;
 }
 
-/*450x669*/
+.card-lg {
+  width: 215px;
+  height: 320px;
+}
+
+/*450x669,150x223*/
 
 /*----------------------------------------------------------------------*/
 
 img.player,img.nation,img.badge,.rating,.position,.name,
 .pace,.shooting,.passing,.dribbling,.defending,.physical,
-.divider-nat,.divider-bad,.divider-nam,.divider-att,.divider-che {
+.divider-nat,.divider-bad,.divider-nam,.divider-att,.divider-che,.divider-special {
   position: absolute;
 }
 
-.card.card-md img.player {
+.card img.player {
   top: 10.7%;
   left: 32%;
   width: 63.4%;
 }
 
-.card.card-md img.nation {
+.card img.nation {
   top: 33.1%;
   left: 16%;
   width: 12.6%;
 }
 
-.card.card-md img.badge {
+.card img.badge {
   top: 42%;
   left: 15.2%;
   width: 14%;
 }
 
-.card.card-md .rating {
+.card .rating {
   width: 15%;
   top: 10.8%;
   left: 14.6%;
-  font-size: 30px;
 }
 
 .card .position {
@@ -64,36 +73,27 @@ img.player,img.nation,img.badge,.rating,.position,.name,
   left: 14.6%;
 }
 
-.card.card-md .position {
-  font-size: 88%;
-}
-
-.card.card-md .name {
-  width: 136px;
-  top: 120px;
-  left: 7px;
+.card .name {
+  width: 91.3%;
+  top: 53.6%;
+  left: 4%;
   letter-spacing: 0.2px;
-  font-size: 16px;
 }
 
-.card .pace,.shooting,.passing,.dribbling,.defending,.physical {
+.card .pace,.card .shooting,.card .passing,.card .dribbling,.card .defending,.card .physical {
   text-align: left;
   width: 33%;
 }
 
-.card .pace,.shooting,.passing {
+.card .pace,.card .shooting,.card .passing {
   left: 18%;
 }
 
-.card .dribbling,.defending,.physical {
+.card .dribbling,.card .defending,.card .physical {
   left: 62%;
 }
 
-.card.card-md .pace,.shooting,.passing,.dribbling,.defending,.physical {
-  font-size: 86%;
-}
-
-.card .pace::after,.shooting::after,.passing::after,.dribbling::after,.defending::after,.physical::after {
+.card .pace::after,.card .shooting::after,.card .passing::after,.card .dribbling::after,.card .defending::after,.card .physical::after {
   white-space: pre;
   font-weight: lighter;
 }
@@ -146,6 +146,60 @@ img.player,img.nation,img.badge,.rating,.position,.name,
   content: " PHY";
 }
 
+/*----------------------------------------------------------------------*/
+/*Tamaños*/
+
+.card.card-sm .rating {
+  font-size: 150%;
+}
+
+.card.card-sm .position {
+  font-size: 70%;
+}
+
+.card.card-sm .name {
+  font-size: 82%;
+}
+
+.card.card-sm .pace,.card.card-sm .shooting,.card.card-sm .passing,.card.card-sm .dribbling,.card.card-sm .defending,.card.card-sm .physical {
+  font-size: 70%;
+}
+
+/*--------------------*/
+
+.card.card-md .rating {
+  font-size: 196%;
+}
+
+.card.card-md .position {
+  font-size: 91%;
+}
+
+.card.card-md .name {
+  font-size: 107%;
+}
+
+.card.card-md .pace,.card.card-md .shooting,.card.card-md .passing,.card.card-md .dribbling,.card.card-md .defending,.card.card-md .physical {
+  font-size: 91%;
+}
+
+/*--------------------*/
+
+.card.card-lg .rating {
+  font-size: 280%;
+}
+
+.card.card-lg .position {
+  font-size: 131%;
+}
+
+.card.card-lg .name {
+  font-size: 153%;
+}
+
+.card.card-lg .pace,.card.card-lg .shooting,.card.card-lg .passing,.card.card-lg .dribbling,.card.card-lg .defending,.card.card-lg .physical {
+  font-size: 131%;
+}
 
 /*----------------------------------------------------------------------*/
 
@@ -153,27 +207,27 @@ img.player,img.nation,img.badge,.rating,.position,.name,
   top: 31.4%;
   left: 17.3%;
   width: 10%;
-  height: 0.3%;
+  height: 0.4%;
 }
 
 .card .divider-bad {
   top: 39.9%;
   left: 17.3%;
   width: 10%;
-  height: 0.3%;
+  height: 0.4%;
 }
 
 .card .divider-nam {
   top: 62.5%;
   left: 17.3%;
   width: 66%;
-  height: 0.3%;
+  height: 0.4%;
 }
 
 .card .divider-att {
-  top: 65.5%;
-  left: 49.7%;
-  width: 1%;
+  top: 65.3%;
+  left: 49.65%;
+  width: 0.7%;
   height: 20%;
 }
 
@@ -181,25 +235,74 @@ img.player,img.nation,img.badge,.rating,.position,.name,
   top: 88%;
   left: 44%;
   width: 12%;
-  height: 0.3%;
+  height: 0.4%;
 }
 
-.gold-nif .divider-nat,.divider-bad,.divider-nam,.divider-att,.divider-che {
+.card .divider-special {
+  top: 10%;
+  left: 12.5%;
+  width: 20%;
+  height: 50%;
+  background: linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.6) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+}
+
+.card.gold-rare .divider-nat,
+.card.gold-rare .divider-bad,
+.card.gold-rare .divider-nam,
+.card.gold-rare .divider-att,
+.card.gold-rare .divider-che {
   /*background: #3f3205;*/
   background: linear-gradient(to right, rgba(102,92,8,0.3) 0%,rgba(102,92,8,0.8) 15%,rgba(102,92,8,1) 19%,rgba(56,44,4,1) 51%,rgba(102,92,8,1) 81%,rgba(102,92,8,0.8) 85%,rgba(102,92,8,0.3) 100%);
   opacity: 0.8;
 }
 
-.ucl-live .divider-nat,.divider-bad,.divider-nam,.divider-att,.divider-che {
+.card.silver-rare .divider-nat,
+.card.silver-rare .divider-bad,
+.card.silver-rare .divider-nam,
+.card.silver-rare .divider-att,
+.card.silver-rare .divider-che {
+  background: #303536;
+  opacity: 0.4;
+}
+
+.card.bronze-rare .divider-nat,
+.card.bronze-rare .divider-bad,
+.card.bronze-rare .divider-nam,
+.card.bronze-rare .divider-att,
+.card.bronze-rare .divider-che {
+  background: #3e2817;
+  opacity: 0.4;
+}
+
+.card.ucl-live .divider-nat,
+.card.ucl-live .divider-bad,
+.card.ucl-live .divider-nam,
+.card.ucl-live .divider-att,
+.card.ucl-live .divider-che {
   background: #c6c9e2;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 /*----------------------------------------------------------------------*/
 
-.gold-nif {
-  background-image: url("../assets/cards/gold-nif.png");
+.gold-common {
+  background-image: url("../assets/cards/gold-common.png");
   color: #3f3205;
+}
+
+.gold-rare {
+  background-image: url("../assets/cards/gold-rare.png");
+  color: #3f3205;
+}
+
+.silver-rare {
+  background-image: url("../assets/cards/silver-rare.png");
+  color: #303536;
+}
+
+.bronze-rare {
+  background-image: url("../assets/cards/bronze-rare.png");
+  color: #3e2817;
 }
 
 .ucl-live {

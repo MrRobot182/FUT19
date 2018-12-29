@@ -7,15 +7,16 @@
   </head>
   <body>
     <div class="container">
-      <div class="card card-md ucl-live">
+      <div class="card card-sm gold-common">
+        <!--<div class="divider-special"></div>-->
         <img class="player" src="assets/players/158023.png">
         <img class="nation" src="assets/nations/52.png">
         <img class="badge" src="assets/badges/241.png">
         <div class="rating">
-          99
+          94
         </div>
         <div class="position">
-          cam
+          cf
         </div>
         <div class="divider-nat"></div>
         <div class="divider-bad"></div>
@@ -25,22 +26,22 @@
         <div class="divider-nam"></div>
         <div class="divider-att"></div>
         <div class="pace">
-          99
+          88
         </div>
         <div class="shooting">
-          98
+          91
         </div>
         <div class="passing">
-          98
+          88
         </div>
         <div class="dribbling">
-          98
+          96
         </div>
         <div class="defending">
-          98
+          32
         </div>
         <div class="physical">
-          98
+          61
         </div>
         <div class="divider-che"></div>
       </div>
