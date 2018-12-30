@@ -9,9 +9,36 @@
     <div class="container">
       <label for="card-type">Carta: </label>
       <select class="" id="card-type" name="card-type">
-        <option value="gold-rare">Oro raro</option>
-        <option value="silver-rare">Plata raro</option>
-        <option value="bronze-rare">Bronce raro</option>
+        <optgroup label="-------------">
+          <option value="gold-rare">Oro raro</option>
+          <option value="silver-rare">Plata raro</option>
+          <option value="bronze-rare">Bronce raro</option>
+        </optgroup>
+        <optgroup label="-------------">
+          <option value="gold-common">Oro comun</option>
+          <option value="silver-common">Plata comun</option>
+          <option value="bronze-common">Bronce comun</option>
+        </optgroup>
+        <optgroup label="-------------">
+          <option value="gold-if">Oro IF</option>
+          <option value="silver-if">Plata IF</option>
+          <option value="bronze-if">Bronce IF</option>
+        </optgroup>
+        <optgroup label="-------------">
+          <option value="ucl-rare">UCL raro</option>
+          <option value="ucl-common">UCL comun</option>
+          <option value="ucl-live">UCL live</option>
+          <option value="ucl-motm">UCL MOTM</option>
+          <option value="ucl-sbc">UCL SBC</option>
+          <option value="ucl-tott">UCL TOTT</option>
+        </optgroup>
+        <optgroup label="-------------">
+          <option value="uel">UEL</option>
+          <option value="uel-live">UEL live</option>
+          <option value="uel-motm">UEL MOTM</option>
+          <option value="uel-sbc">UEL SBC</option>
+          <option value="uel-tott">UEL TOTT</option>
+        </optgroup>
       </select>
       <label for="size" style="padding-left:15px">Tamaño: </label>
       <select id="size" name="size">
@@ -20,6 +47,7 @@
         <option value="card-lg" selected>Grande</option>
       </select>
       <br>
+
       <div id="card1" class="card card-lg gold-rare" style="margin-top:10px">
         <!--<div class="divider-special"></div>-->
         <img class="player" src="assets/players/158023.png">
@@ -29,7 +57,7 @@
           94
         </div>
         <div class="position">
-          cf
+          cam
         </div>
         <div class="divider-nat"></div>
         <div class="divider-bad"></div>
@@ -69,6 +97,11 @@
         var size = document.getElementById("size").value;
         var cardType = document.getElementById("card-type").value;
         document.getElementById("card1").className = "card " + size + " " + cardType;
+        if (cardType == "ucl-live"){
+          var divSpecial = document.createElement("div");
+          var card = document.getElementById("card1");
+          document.body.insertBefore(divSpecial, card);
+        }
       }
     </script>
 

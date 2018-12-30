@@ -256,7 +256,7 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 .card.gold-rare .divider-bad,
 .card.gold-rare .divider-nam,
 .card.gold-rare .divider-att,
-.card.gold-rare .divider-che, {
+.card.gold-rare .divider-che {
   /*background: linear-gradient(to right, rgba(102,92,8,0.3) 0%,rgba(102,92,8,0.8) 15%,rgba(102,92,8,1) 19%,rgba(56,44,4,1) 51%,rgba(102,92,8,1) 81%,rgba(102,92,8,0.8) 85%,rgba(102,92,8,0.3) 100%);*/
   background: #3f3205;
   opacity: 0.8;
@@ -434,9 +434,38 @@ opacity: 0.8;
   background-image: url("../assets/cards/ucl-tott.png");
 }
 
+.uel,.uel-live,.uel-motm,.uel-tott {
+  color: #f39200;
+}
+
+.uel {
+  background-image: url("../assets/cards/uel.png");
+}
+
 .uel-live {
   background-image: url("../assets/cards/uel-live.png");
-  color: #f39200;
+}
+
+.uel-motm {
+  background-image: url("../assets/cards/uel-motm.png");
+}
+
+.uel-motm .name,
+.uel-motm .pace,
+.uel-motm .shooting,
+.uel-motm .passing,
+.uel-motm .dribbling,
+.uel-motm .defending,
+.uel-motm .physical {
+  color: #000000;
+}
+
+.uel-sbc {
+  background-image: url("../assets/cards/uel-sbc.png");
+}
+
+.uel-tott {
+  background-image: url("../assets/cards/uel-tott.png");
 }
 
 .card::after {
