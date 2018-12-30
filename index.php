@@ -7,8 +7,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="card card-sm bronze-if">
-        <div class="divider-special"></div>
+      <div class="card card-lg ucl-tott">
+        <!--<div class="divider-special"></div>-->
         <img class="player" src="assets/players/158023.png">
         <img class="nation" src="assets/nations/52.png">
         <img class="badge" src="assets/badges/241.png">
