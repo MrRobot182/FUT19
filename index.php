@@ -7,7 +7,20 @@
   </head>
   <body>
     <div class="container">
-      <div class="card card-lg ucl-tott">
+      <label for="card-type">Carta: </label>
+      <select class="" id="card-type" name="card-type">
+        <option value="gold-rare">Oro raro</option>
+        <option value="silver-rare">Plata raro</option>
+        <option value="bronze-rare">Bronce raro</option>
+      </select>
+      <label for="size" style="padding-left:15px">Tamaño: </label>
+      <select id="size" name="size">
+        <option value="card-sm">Chico</option>
+        <option value="card-md">Mediano</option>
+        <option value="card-lg" selected>Grande</option>
+      </select>
+      <br>
+      <div id="card1" class="card card-lg gold-rare" style="margin-top:10px">
         <!--<div class="divider-special"></div>-->
         <img class="player" src="assets/players/158023.png">
         <img class="nation" src="assets/nations/52.png">
@@ -46,6 +59,18 @@
         <div class="divider-che"></div>
       </div>
     </div>
+
+    <script type="text/javascript">
+      console.log("works!");
+      document.getElementById("card-type").onchange = function() { asignaCarta() };
+      document.getElementById("size").onchange = function() { asignaCarta() };
+
+      function asignaCarta(){
+        var size = document.getElementById("size").value;
+        var cardType = document.getElementById("card-type").value;
+        document.getElementById("card1").className = "card " + size + " " + cardType;
+      }
+    </script>
 
   </body>
 </html>

@@ -5,6 +5,10 @@
   src: local('DIN Pro Condensed Regular'), url('DINPro-Cond.woff') format('woff');
 }
 
+body {
+  font-family:'Arial';
+}
+
 .card {
   display: inline-block;
   position: relative;
