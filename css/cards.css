@@ -250,16 +250,10 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 .card.gold-rare .divider-bad,
 .card.gold-rare .divider-nam,
 .card.gold-rare .divider-att,
-.card.gold-rare .divider-che {
+.card.gold-rare .divider-che, {
   background: linear-gradient(to right, rgba(102,92,8,0.3) 0%,rgba(102,92,8,0.8) 15%,rgba(102,92,8,1) 19%,rgba(56,44,4,1) 51%,rgba(102,92,8,1) 81%,rgba(102,92,8,0.8) 85%,rgba(102,92,8,0.3) 100%);
   opacity: 0.8;
 }
-
-/* No funciona :(
-.card-gold-rare :matches(.divider-nat,.divider-bad,.divider-nam,.divider-att,.divider-che) {
-  background: linear-gradient(to right, rgba(102,92,8,0.3) 0%,rgba(102,92,8,0.8) 15%,rgba(102,92,8,1) 19%,rgba(56,44,4,1) 51%,rgba(102,92,8,1) 81%,rgba(102,92,8,0.8) 85%,rgba(102,92,8,0.3) 100%);
-  opacity: 0.8;
-}*/
 
 .card.silver-rare .divider-nat,
 .card.silver-rare .divider-bad,
@@ -288,15 +282,26 @@ img.player,img.nation,img.badge,.rating,.position,.name,
   opacity: 0.4;
 }
 
-/*----------------------------------------------------------------------*/
+/* No funciona :(
+.card-gold-rare :matches(.divider-nat,.divider-bad,.divider-nam,.divider-att,.divider-che) {
+background: linear-gradient(to right, rgba(102,92,8,0.3) 0%,rgba(102,92,8,0.8) 15%,rgba(102,92,8,1) 19%,rgba(56,44,4,1) 51%,rgba(102,92,8,1) 81%,rgba(102,92,8,0.8) 85%,rgba(102,92,8,0.3) 100%);
+opacity: 0.8;
+}*/
 
-.gold-common {
-  background-image: url("../assets/cards/gold-common.png");
-  color: #3f3205;
-}
+/*----------------------------------------------------------------------*/
 
 .gold-rare {
   background-image: url("../assets/cards/gold-rare.png");
+  color: #3f3205;
+}
+
+.gold-common {
+  background-image: url("../assets/cards/silver-common.png");
+  color: #3f3205;
+}
+
+.silver-common {
+  background-image: url("../assets/cards/silver-common.png");
   color: #3f3205;
 }
 

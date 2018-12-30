@@ -7,9 +7,8 @@
   </head>
   <body>
     <div class="container">
-      <div class="card card-sm ucl-live">
-        <div class="divider-special"></div>
-        <img class="player" src="assets/players/158023-1.png">
+      <div class="card card-md gold-common">
+        <img class="player" src="assets/players/158023.png">
         <img class="nation" src="assets/nations/52.png">
         <img class="badge" src="assets/badges/241.png">
         <div class="rating">
