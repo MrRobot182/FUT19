@@ -49,7 +49,7 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 }
 
 .card img.nation {
-  top: 33.1%;
+  top: 33.3%;
   left: 16%;
   width: 12.6%;
 }
@@ -240,18 +240,21 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 
 .card .divider-special {
   top: 10%;
-  left: 12.5%;
+  left: 12.3%;
   width: 20%;
   height: 50%;
   background: linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.6) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
 }
+
+/*Colores dividers*/
 
 .card.gold-rare .divider-nat,
 .card.gold-rare .divider-bad,
 .card.gold-rare .divider-nam,
 .card.gold-rare .divider-att,
 .card.gold-rare .divider-che, {
-  background: linear-gradient(to right, rgba(102,92,8,0.3) 0%,rgba(102,92,8,0.8) 15%,rgba(102,92,8,1) 19%,rgba(56,44,4,1) 51%,rgba(102,92,8,1) 81%,rgba(102,92,8,0.8) 85%,rgba(102,92,8,0.3) 100%);
+  /*background: linear-gradient(to right, rgba(102,92,8,0.3) 0%,rgba(102,92,8,0.8) 15%,rgba(102,92,8,1) 19%,rgba(56,44,4,1) 51%,rgba(102,92,8,1) 81%,rgba(102,92,8,0.8) 85%,rgba(102,92,8,0.3) 100%);*/
+  background: #3f3205;
   opacity: 0.8;
 }
 
@@ -273,12 +276,51 @@ img.player,img.nation,img.badge,.rating,.position,.name,
   opacity: 0.4;
 }
 
+.card.gold-common .divider-nat,
+.card.gold-common .divider-bad,
+.card.gold-common .divider-nam,
+.card.gold-common .divider-att,
+.card.gold-common .divider-che,
+.card.silver-common .divider-nat,
+.card.silver-common .divider-bad,
+.card.silver-common .divider-nam,
+.card.silver-common .divider-att,
+.card.silver-common .divider-che,
+.card.bronze-common .divider-nat,
+.card.bronze-common .divider-bad,
+.card.bronze-common .divider-nam,
+.card.bronze-common .divider-att,
+.card.bronze-common .divider-che,
+.card.gold-if .divider-nat,
+.card.gold-if .divider-bad,
+.card.gold-if .divider-nam,
+.card.gold-if .divider-att,
+.card.gold-if .divider-che,
+.card.silver-if .divider-nat,
+.card.silver-if .divider-bad,
+.card.silver-if .divider-nam,
+.card.silver-if .divider-att,
+.card.silver-if .divider-che,
+.card.bronze-if .divider-nat,
+.card.bronze-if .divider-bad,
+.card.bronze-if .divider-nam,
+.card.bronze-if .divider-att,
+.card.bronze-if .divider-che {
+  background: #c6c9e2;
+  opacity: 0.7;
+}
+
 .card.ucl-live .divider-nat,
 .card.ucl-live .divider-bad,
 .card.ucl-live .divider-nam,
 .card.ucl-live .divider-att,
-.card.ucl-live .divider-che {
-  background: #c6c9e2;
+.card.ucl-live .divider-che,
+.card.uel-live .divider-nat,
+.card.uel-live .divider-bad,
+.card.uel-live .divider-nam,
+.card.uel-live .divider-att,
+.card.uel-live .divider-che {
+  background: #ffffff;
   opacity: 0.4;
 }
 
@@ -295,16 +337,6 @@ opacity: 0.8;
   color: #3f3205;
 }
 
-.gold-common {
-  background-image: url("../assets/cards/silver-common.png");
-  color: #3f3205;
-}
-
-.silver-common {
-  background-image: url("../assets/cards/silver-common.png");
-  color: #3f3205;
-}
-
 .silver-rare {
   background-image: url("../assets/cards/silver-rare.png");
   color: #303536;
@@ -315,7 +347,71 @@ opacity: 0.8;
   color: #3e2817;
 }
 
+.gold-common {
+  background-image: url("../assets/cards/gold-common.png");
+  color: #3f3205;
+}
+
+.silver-common {
+  background-image: url("../assets/cards/silver-common.png");
+  color: #303536;
+}
+
+.bronze-common {
+  background-image: url("../assets/cards/bronze-common.png");
+  color: #3e2817;
+}
+
+.gold-if {
+  background-image: url("../assets/cards/gold-if.png");
+  color: #e9cc74;
+}
+
+.silver-if {
+  background-image: url("../assets/cards/silver-if.png");
+  color: #b0bcc8;
+}
+
+.bronze-if {
+  background-image: url("../assets/cards/bronze-if.png");
+  color: #bb9266;
+}
+
 .ucl-live {
   background-image: url("../assets/cards/ucl-live.png");
   color: #ffffff;
+}
+
+.uel-live {
+  background-image: url("../assets/cards/uel-live.png");
+  color: #f39200;
+}
+
+.card::after {
+	content:'';
+  top:0;
+	transform:translateX(100%);
+	width:100%;
+	height:100%;
+	position: absolute;
+	z-index:1;
+	animation: slide 3s infinite 3s;
+
+  /*
+  CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/
+  */
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(128,186,232,0) 99%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.3)), color-stop(99%,rgba(128,186,232,0)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.3) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+}
+
+/* animation */
+
+@keyframes slide {
+	0% {transform:translateX(-100%);}
+	100% {transform:translateX(100%);}
 }
