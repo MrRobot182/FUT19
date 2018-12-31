@@ -5,6 +5,13 @@
   src: local('DIN Pro Condensed Regular'), url('DINPro-Cond.woff') format('woff');
 }
 
+@font-face {
+font-family: 'Champions-Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Champions-Bold'), url('Champions-Bold.woff') format('woff');
+}
+
 body {
   font-family:'Arial';
 }
@@ -242,12 +249,101 @@ img.player,img.nation,img.badge,.rating,.position,.name,
   height: 0.4%;
 }
 
-.card .divider-special {
+.card.gold-if .divider-special,
+.card.silver-if .divider-special,
+.card.bronze-if .divider-special,
+.card.ucl-live .divider-special,
+.card.ucl-tott .divider-special,
+.card.uel-live .divider-special,
+.card.uel-tott .divider-special,
+.card.hero .divider-special {
   top: 10%;
   left: 12.3%;
   width: 20%;
   height: 50%;
   background: linear-gradient(180deg, transparent 10%, rgba(0,0,0,0.6) 64%, rgba(0,0,0,0.55) 89%, rgba(0,0,0,0.05) 100%);
+}
+
+.card.uel-sbc .divider-special {
+  top: 10%;
+  left: 12.3%;
+  width: 20%;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(239,142,0,0) 10%, rgba(239,142,0,0.65) 64%, rgba(239,142,0,0.55) 89%, rgba(239,142,0,0.05) 100%);
+}
+
+.card.flashback .divider-special {
+  top: 10%;
+  left: 12.3%;
+  width: 20%;
+  height: 60%;
+  background: linear-gradient(180deg, rgba(58,94,94,0) 10%, rgba(58,94,94,0.65) 64%, rgba(58,94,94,0.55) 89%, rgba(58,94,94,0.05) 100%);
+}
+
+.card.futmas .divider-special {
+  top: 10%;
+  left: 12.3%;
+  width: 20%;
+  height: 60%;
+  background: linear-gradient(180deg, transparent 10%, rgba(92,9,10,0.6) 64%, rgba(92,9,10,0.55) 89%, rgba(92,9,10,0.05) 100%);
+}
+
+/*FUTTIE*/
+
+.card.icon .divider-special {
+  top: 10%;
+  left: 12.3%;
+  width: 20%;
+  height: 60%;
+  background: linear-gradient(180deg, rgba(217,212,202,0) 10%, rgba(217,212,202,0.65) 64%, rgba(217,212,202,0.55) 89%, rgba(217,212,202,0.05) 100%);
+}
+
+.card.otw .divider-special {
+  top: 10%;
+  left: 12.3%;
+  width: 20%;
+  height: 60%;
+  background: linear-gradient(180deg, rgba(0,9,40,0) 10%, rgba(0,9,40,0.65) 64%, rgba(0,9,40,0.55) 89%, rgba(0,9,40,0.05) 100%);
+}
+
+.card.premium-sbc .divider-special {
+  top: 10%;
+  left: 12.3%;
+  width: 20%;
+  height: 60%;
+  background: linear-gradient(180deg, rgba(82,47,131,0) 10%, rgba(82,47,131,0.65) 64%, rgba(82,47,131,0.55) 89%, rgba(82,47,131,0.05) 100%);
+}
+
+.card.sbc .divider-special {
+  top: 10%;
+  left: 12.3%;
+  width: 20%;
+  height: 60%;
+  background: linear-gradient(180deg, rgba(109,18,108,0) 10%, rgba(109,18,108,0.65) 64%, rgba(109,18,108,0.55) 89%, rgba(109,18,108,0.05) 100%);
+}
+
+.card.premier-league-potm .divider-special {
+  top: 10%;
+  left: 12.3%;
+  width: 20%;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(49,2,58,0) 10%, rgba(49,2,58,0.65) 64%, rgba(49,2,58,0.55) 89%, rgba(49,2,58,0.05) 100%);
+}
+
+.card.bundesliga-potm .divider-special {
+  top: 10%;
+  left: 12.3%;
+  width: 20%;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(87,1,8,0) 10%, rgba(87,1,8,0.65) 64%, rgba(87,1,8,0.55) 89%, rgba(87,1,8,0.05) 100%);
+}
+
+.card.award-winner .divider-special {
+  top: 10%;
+  left: 12.3%;
+  width: 20%;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(79,28,162,0) 10%, rgba(79,28,162,0.65) 64%, rgba(79,28,162,0.55) 89%, rgba(79,28,162,0.05) 100%);
 }
 
 /*Colores dividers*/
@@ -294,24 +390,49 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 .card.bronze-common .divider-bad,
 .card.bronze-common .divider-nam,
 .card.bronze-common .divider-att,
-.card.bronze-common .divider-che,
+.card.bronze-common .divider-che {
+  background: #c6c9e2;
+  opacity: 0.7;
+}
+
+
 .card.gold-if .divider-nat,
 .card.gold-if .divider-bad,
 .card.gold-if .divider-nam,
 .card.gold-if .divider-att,
 .card.gold-if .divider-che,
+.card.gold-fut-champions .divider-nat,
+.card.gold-fut-champions .divider-bad,
+.card.gold-fut-champions .divider-nam,
+.card.gold-fut-champions .divider-att,
+.card.gold-fut-champions .divider-che {
+  background: #e9cc74;
+}
+
 .card.silver-if .divider-nat,
 .card.silver-if .divider-bad,
 .card.silver-if .divider-nam,
 .card.silver-if .divider-att,
 .card.silver-if .divider-che,
+.card.silver-fut-champions .divider-nat,
+.card.silver-fut-champions .divider-bad,
+.card.silver-fut-champions .divider-nam,
+.card.silver-fut-champions .divider-att,
+.card.silver-fut-champions .divider-che {
+  background: #b0bcc8;
+}
+
 .card.bronze-if .divider-nat,
 .card.bronze-if .divider-bad,
 .card.bronze-if .divider-nam,
 .card.bronze-if .divider-att,
-.card.bronze-if .divider-che {
-  background: #c6c9e2;
-  opacity: 0.7;
+.card.bronze-if .divider-che,
+.card.bronze-fut-champions .divider-nat,
+.card.bronze-fut-champions .divider-bad,
+.card.bronze-fut-champions .divider-nam,
+.card.bronze-fut-champions .divider-att,
+.card.bronze-fut-champions .divider-che {
+  background: #bb9266;
 }
 
 .card.ucl-common .divider-nat,
@@ -344,13 +465,141 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 .card.ucl-tott .divider-nam,
 .card.ucl-tott .divider-att,
 .card.ucl-tott .divider-che,
+.card.uel .divider-nat,
+.card.uel .divider-bad,
+.card.uel .divider-nam,
+.card.uel .divider-att,
+.card.uel .divider-che,
+.card.uel-motm .divider-nat,
+.card.uel-motm .divider-bad,
+.card.uel-motm .divider-nam,
+.card.uel-motm .divider-att,
+.card.uel-motm .divider-che,
+.card.uel-sbc .divider-nat,
+.card.uel-sbc .divider-bad,
+.card.uel-sbc .divider-nam,
+.card.uel-sbc .divider-att,
+.card.uel-sbc .divider-che,
+.card.uel-tott .divider-nat,
+.card.uel-tott .divider-bad,
+.card.uel-tott .divider-nam,
+.card.uel-tott .divider-att,
+.card.uel-tott .divider-che,
 .card.uel-live .divider-nat,
 .card.uel-live .divider-bad,
 .card.uel-live .divider-nam,
 .card.uel-live .divider-att,
-.card.uel-live .divider-che {
+.card.uel-live .divider-che,
+.card.futtie .divider-nat,
+.card.futtie .divider-bad,
+.card.futtie .divider-nam,
+.card.futtie .divider-att,
+.card.futtie .divider-che,
+.card.motm .divider-nat,
+.card.motm .divider-bad,
+.card.motm .divider-nam,
+.card.motm .divider-att,
+.card.motm .divider-che,
+.card.pro .divider-nat,
+.card.pro .divider-bad,
+.card.pro .divider-nam,
+.card.pro .divider-att,
+.card.pro .divider-che,
+.card.sbc .divider-nat,
+.card.sbc .divider-bad,
+.card.sbc .divider-nam,
+.card.sbc .divider-att,
+.card.sbc .divider-che,
+.card.award-winner .divider-nat,
+.card.award-winner .divider-bad,
+.card.award-winner .divider-nam,
+.card.award-winner .divider-att,
+.card.award-winner .divider-che {
   background: #ffffff;
+  opacity: 0.5;
+}
+
+.card.flashback .divider-nat,
+.card.flashback .divider-bad,
+.card.flashback .divider-nam,
+.card.flashback .divider-att,
+.card.flashback .divider-che {
+  background: #c9b89b;
+  opacity: 0.6;
+}
+
+/*FUTTIE*/
+
+.card.futmas .divider-nat,
+.card.futmas .divider-bad,
+.card.futmas .divider-nam,
+.card.futmas .divider-att,
+.card.futmas .divider-che {
+  background: #45af78;
+  opacity: 0.6;
+}
+
+.card.hero .divider-nat,
+.card.hero .divider-bad,
+.card.hero .divider-nam,
+.card.hero .divider-att,
+.card.hero .divider-che {
+  background: #a694cd;
+  opacity: 0.6;
+}
+
+.card.icon .divider-nat,
+.card.icon .divider-bad,
+.card.icon .divider-nam,
+.card.icon .divider-att,
+.card.icon .divider-che {
+  background: #625217;
   opacity: 0.4;
+}
+
+.card.otw .divider-nat,
+.card.otw .divider-bad,
+.card.otw .divider-nam,
+.card.otw .divider-att,
+.card.otw .divider-che {
+  background: #305cc4;
+  opacity: 0.7;
+}
+
+.card.premium-sbc .divider-nat,
+.card.premium-sbc .divider-bad,
+.card.premium-sbc .divider-nam,
+.card.premium-sbc .divider-att,
+.card.premium-sbc .divider-che {
+  background: #df77d8;
+  opacity: 0.4;
+}
+
+.card.record-breaker .divider-nat,
+.card.record-breaker .divider-bad,
+.card.record-breaker .divider-nam,
+.card.record-breaker .divider-att,
+.card.record-breaker .divider-che {
+  background: #b5fa10;
+  opacity: 0.7;
+}
+
+.card.premier-league-potm .divider-nat,
+.card.premier-league-potm .divider-bad,
+.card.premier-league-potm .divider-nam,
+.card.premier-league-potm .divider-att,
+.card.premier-league-potm .divider-che {
+  background: #3fecff;
+  opacity: 0.4;
+}
+
+.card.bundesliga-potm .divider-nat,
+.card.bundesliga-potm .divider-bad,
+.card.bundesliga-potm .divider-nam,
+.card.bundesliga-potm .divider-att,
+.card.bundesliga-potm .divider-che {
+  background: #000000;
+  opacity: 0.5;
 }
 
 /* No funciona :(
@@ -361,52 +610,78 @@ opacity: 0.8;
 
 /*----------------------------------------------------------------------*/
 
+.gold-rare,.gold-common {
+  color: #3f3205;
+}
+
+.silver-rare,.silver-common{
+  color: #303536;
+}
+.bronze-rare,.bronze-common {
+  color: #3e2817;
+}
+
 .gold-rare {
   background-image: url("../assets/cards/gold-rare.png");
-  color: #3f3205;
 }
 
 .silver-rare {
   background-image: url("../assets/cards/silver-rare.png");
-  color: #303536;
 }
 
 .bronze-rare {
   background-image: url("../assets/cards/bronze-rare.png");
-  color: #3e2817;
 }
 
 .gold-common {
   background-image: url("../assets/cards/gold-common.png");
-  color: #3f3205;
 }
 
 .silver-common {
   background-image: url("../assets/cards/silver-common.png");
-  color: #303536;
 }
 
 .bronze-common {
   background-image: url("../assets/cards/bronze-common.png");
-  color: #3e2817;
+}
+
+.gold-if,.gold-fut-champions {
+  color: #e9cc74;
+}
+
+.silver-if,.silver-fut-champions {
+  color: #b0bcc8;
+}
+
+.bronze-if,.bronze-fut-champions {
+  color: #bb9266;
 }
 
 .gold-if {
   background-image: url("../assets/cards/gold-if.png");
-  color: #e9cc74;
 }
 
 .silver-if {
   background-image: url("../assets/cards/silver-if.png");
-  color: #b0bcc8;
 }
 
 .bronze-if {
   background-image: url("../assets/cards/bronze-if.png");
-  color: #bb9266;
 }
 
-.ucl-common,.ucl-rare,.ucl-live,.ucl-motm,.ucl-sbc,.ucl-tott {
+.gold-fut-champions {
+  background-image: url("../assets/cards/gold-fut-champions.png");
+}
+
+.silver-fut-champions {
+  background-image: url("../assets/cards/silver-fut-champions.png");
+}
+
+.bronze-fut-champions {
+  background-image: url("../assets/cards/bronze-fut-champions.png");
+}
+
+.ucl-common,.ucl-rare,.ucl-live,.ucl-motm,.ucl-sbc,.ucl-tott,.futmas,.bundesliga-potm {
   color: #ffffff;
 }
 
@@ -467,6 +742,79 @@ opacity: 0.8;
 .uel-tott {
   background-image: url("../assets/cards/uel-tott.png");
 }
+
+/*----------------------------------------------------------------------------*/
+
+.flashback {
+  color: #d1c3a7;
+  background-image: url("../assets/cards/flashback.png");
+}
+
+.futtie,.motm,.pro {
+  color: #eeeeee;
+}
+
+.futtie {
+  background-image: url("../assets/cards/futtie.png");
+}
+
+.futmas {
+  background-image: url("../assets/cards/futmas.png");
+}
+
+.hero {
+  color: #a694cd;
+  background-image: url("../assets/cards/hero.png");
+}
+
+.icon {
+  color: #625217;
+  background-image: url("../assets/cards/icon.png");
+}
+
+.motm {
+  background-image: url("../assets/cards/motm.png");
+}
+
+.otw {
+  color: #ea598d;
+  background-image: url("../assets/cards/ones-to-watch.png");
+}
+
+.pro {
+  background-image: url("../assets/cards/pro-player.png");
+}
+
+.premium-sbc {
+  color: #ee99f6;
+  background-image: url("../assets/cards/premium-sbc.png");
+}
+
+.record-breaker {
+  color: #b5fa10;
+  background-image: url("../assets/cards/record-breaker.png");
+}
+
+.sbc {
+  color: #72c0ff;
+  background-image: url("../assets/cards/sbc.png");
+}
+
+.premier-league-potm {
+  color: #3fecff;
+  background-image: url("../assets/cards/premier-league-potm.png");
+}
+
+.bundesliga-potm {
+  background-image: url("../assets/cards/bundesliga-potm.png");
+}
+
+.award-winner {
+  color: #c2ee5e;
+  background-image: url("../assets/cards/award-winner.png");
+}
+
+/*----------------------------------------------------------------------------*/
 
 .card::after {
 	content:'';
