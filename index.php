@@ -56,6 +56,7 @@
           <option value="premium-sbc">Premium SBC</option>
           <option value="record-breaker">Record Breaker</option>
           <option value="sbc">SBC</option>
+          <option value="ultimate-scream">Ultimate Scream</option>
         </optgroup>
         <optgroup>
           <option value="premier-league-potm">Premier League POTM</option>
@@ -85,7 +86,7 @@
       </select>
       <br>
 
-      <div id="card1" class="card card-lg gold-rare" style="margin-top:10px">
+      <div id="card1" class="card card-lg ultimate-scream" style="margin-top:10px">
         <div class="divider-special"></div>
         <img class="player" src="assets/players/test.png">
         <img class="nation" src="assets/nations/83.png">

@@ -256,7 +256,8 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 .card.ucl-tott .divider-special,
 .card.uel-live .divider-special,
 .card.uel-tott .divider-special,
-.card.hero .divider-special {
+.card.hero .divider-special,
+.card.ultimate-scream .divider-special {
   top: 10%;
   left: 12.3%;
   width: 20%;
@@ -514,7 +515,12 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 .card.award-winner .divider-bad,
 .card.award-winner .divider-nam,
 .card.award-winner .divider-att,
-.card.award-winner .divider-che {
+.card.award-winner .divider-che,
+.card.ultimate-scream .divider-nat,
+.card.ultimate-scream .divider-bad,
+.card.ultimate-scream .divider-nam,
+.card.ultimate-scream .divider-att,
+.card.ultimate-scream .divider-che {
   background: #ffffff;
   opacity: 0.5;
 }
@@ -812,6 +818,11 @@ opacity: 0.8;
 .award-winner {
   color: #c2ee5e;
   background-image: url("../assets/cards/award-winner.png");
+}
+
+.ultimate-scream {
+  color: #ed7c49;
+  background-image: url("../assets/cards/ultimate-scream.png");
 }
 
 /*----------------------------------------------------------------------------*/
