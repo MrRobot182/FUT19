@@ -129,16 +129,13 @@
 
     <div class="pitch">
 
-      <div class="position-1 card-mini">
-
+      <div class="position-1">
         <div class="card-base">
           <div class="base-pos">
-            GK
+            gk
           </div>
         </div>
-
-        <div class="card card-mini empty"></div>
-        <!--<div class="card card-sm gold-rare">
+        <div class="card card-mini gold-rare">
           <div class="divider-special"></div>
           <img class="player" src="assets/players/test.png">
           <img class="nation" src="assets/nations/83.png">
@@ -149,34 +146,109 @@
           <div class="position">
             cam
           </div>
-          <div class="divider-nat"></div>
-          <div class="divider-bad"></div>
-          <div class="name">
-            alvarado
-          </div>
-          <div class="divider-nam"></div>
-          <div class="divider-att"></div>
-          <div class="pace">
-            82
-          </div>
-          <div class="shooting">
-            69
-          </div>
-          <div class="passing">
-            72
-          </div>
-          <div class="dribbling">
-            79
-          </div>
-          <div class="defending">
-            19
-          </div>
-          <div class="physical">
-            54
-          </div>
-          <div class="divider-che"></div>
-        </div>-->
+        </div>
       </div>
+
+      <div class="position-2 f-422">
+        <div class="card-base">
+          <div class="base-pos">
+            rb
+          </div>
+        </div>
+        <div class="card card-mini empty">
+        </div>
+      </div>
+
+      <div class="position-3 f-422">
+        <div class="card-base">
+          <div class="base-pos">
+            cb
+          </div>
+        </div>
+        <div class="card card-mini empty">
+        </div>
+      </div>
+
+      <div class="position-4 f-422">
+        <div class="card-base">
+          <div class="base-pos">
+            cb
+          </div>
+        </div>
+        <div class="card card-mini empty">
+        </div>
+      </div>
+
+      <div class="position-5 f-422">
+        <div class="card-base">
+          <div class="base-pos">
+            lb
+          </div>
+        </div>
+        <div class="card card-mini empty">
+        </div>
+      </div>
+
+      <div class="position-6 f-422">
+        <div class="card-base">
+          <div class="base-pos">
+            rm
+          </div>
+        </div>
+        <div class="card card-mini empty">
+        </div>
+      </div>
+
+      <div class="position-7 f-422">
+        <div class="card-base">
+          <div class="base-pos">
+            cm
+          </div>
+        </div>
+        <div class="card card-mini empty">
+        </div>
+      </div>
+
+      <div class="position-8 f-422">
+        <div class="card-base">
+          <div class="base-pos">
+            cm
+          </div>
+        </div>
+        <div class="card card-mini empty">
+        </div>
+      </div>
+
+      <div class="position-9 f-422">
+        <div class="card-base">
+          <div class="base-pos">
+            lm
+          </div>
+        </div>
+        <div class="card card-mini empty">
+        </div>
+      </div>
+
+      <div class="position-10 f-422">
+        <div class="card-base">
+          <div class="base-pos">
+            st
+          </div>
+        </div>
+        <div class="card card-mini empty">
+        </div>
+      </div>
+
+      <div class="position-11 f-422">
+        <div class="card-base">
+          <div class="base-pos">
+            st
+          </div>
+        </div>
+        <div class="card card-mini empty">
+        </div>
+      </div>
+
     </div>
 
 

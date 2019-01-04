@@ -33,6 +33,13 @@ body {
   height: 120px;
 }
 
+.card.card-mini .pace,.card.card-mini .shooting,.card.card-mini .passing,
+.card.card-mini .dribbling,.card.card-mini .defending,.card.card-mini .physical,
+.card.card-mini .name,.card.card-mini.empty .rating,.card.card-mini.empty .position,
+.card.card-mini.empty .badge,.card.card-mini.empty .nation,.card.card-mini.empty .player {
+  display: none;
+}
+
 .card-sm {
   width: 115px;
   height: 171px;
@@ -56,6 +63,39 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 .pace,.shooting,.passing,.dribbling,.defending,.physical,
 .divider-nat,.divider-bad,.divider-nam,.divider-att,.divider-che,.divider-special {
   position: absolute;
+}
+
+.card.card-mini .rating {
+  width: 17px;
+  top: 21%;
+  font-size: 18px;
+  left: 8.5%;
+  font-weight: lighter;
+}
+
+.card.card-mini .position {
+  width: 17px;
+  top: 36%;
+  left: 8.5%;
+  font-size: 10px;
+}
+
+.card.card-mini img.player {
+  top: 19%;
+  left: 28%;
+  width: 70%;
+}
+
+.card.card-mini img.nation {
+  top: 47%;
+  left: 10.5%;
+  width: 16%;
+}
+
+.card.card-mini img.badge {
+  top: 56%;
+  left: 10%;
+  width: 18%;
 }
 
 .card img.player {
