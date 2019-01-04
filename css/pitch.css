@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'DIN Pro Condensed Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DIN Pro Condensed Regular'), url('DINPro-Cond.woff') format('woff');
+}
+
+.pitch {
+  position: absolute;
+  background-image: url("../assets/page/pitch_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1200px;
+  height: 675px;
+}
+
+.card-base,.pitch .position-1,.pitch .position-1 .card-base .base-pos {
+  position: relative;
+}
+
+.card-base {
+  background-image: url("../assets/page/card_base.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 31px;
+  top: 115%;
+  left: 16%;
+}
+
+.pitch .position-1 {
+  top: 50.5%;
+  left: 46.5%;
+}
+
+.pitch .position-1 .card-base .base-pos{
+  font-family:'DIN Pro Condensed Regular';
+  color: white;
+  width: 100%;
+  top: 50%;
+  font-size: 12px;
+  text-align: center;
+}
+
+.pitch .card-base .base-pos.same-pos {
+  color: #70d73a;
+}
+
+.pitch .card-base .base-pos.different-pos {
+  color: #be9126;
+}
+
+.pitch .card-base .base-pos.wrong-pos {
+  color: #b72743;
+}

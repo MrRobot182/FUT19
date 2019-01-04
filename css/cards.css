@@ -28,6 +28,11 @@ body {
   font-weight: bold;
 }
 
+.card-mini {
+  width: 90px;
+  height: 120px;
+}
+
 .card-sm {
   width: 115px;
   height: 171px;
@@ -73,14 +78,14 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 
 .card .rating {
   width: 15%;
-  top: 10.8%;
+  top: 10.6%;
   left: 14.6%;
 }
 
 .card .position {
   font-weight: lighter;
   width: 15%;
-  top: 23.8%;
+  top: 23.5%;
   left: 14.6%;
 }
 
@@ -161,11 +166,11 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 /*Tamaños*/
 
 .card.card-sm .rating {
-  font-size: 150%;
+  font-size: 140%;
 }
 
 .card.card-sm .position {
-  font-size: 70%;
+  font-size: 60%;
 }
 
 .card.card-sm .name {
@@ -179,11 +184,11 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 /*--------------------*/
 
 .card.card-md .rating {
-  font-size: 196%;
+  font-size: 180%;
 }
 
 .card.card-md .position {
-  font-size: 91%;
+  font-size: 85%;
 }
 
 .card.card-md .name {
@@ -197,11 +202,11 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 /*--------------------*/
 
 .card.card-lg .rating {
-  font-size: 280%;
+  font-size: 260%;
 }
 
 .card.card-lg .position {
-  font-size: 131%;
+  font-size: 120%;
 }
 
 .card.card-lg .name {
@@ -257,7 +262,8 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 .card.uel-live .divider-special,
 .card.uel-tott .divider-special,
 .card.hero .divider-special,
-.card.ultimate-scream .divider-special {
+.card.ultimate-scream .divider-special,
+.card.swap-deals-reward .divider-special {
   top: 10%;
   left: 12.3%;
   width: 20%;
@@ -520,7 +526,67 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 .card.ultimate-scream .divider-bad,
 .card.ultimate-scream .divider-nam,
 .card.ultimate-scream .divider-att,
-.card.ultimate-scream .divider-che {
+.card.ultimate-scream .divider-che,
+.card.swap-deals-1 .divider-nat,
+.card.swap-deals-1 .divider-bad,
+.card.swap-deals-1 .divider-nam,
+.card.swap-deals-1 .divider-att,
+.card.swap-deals-1 .divider-che,
+.card.swap-deals-2 .divider-nat,
+.card.swap-deals-2 .divider-bad,
+.card.swap-deals-2 .divider-nam,
+.card.swap-deals-2 .divider-att,
+.card.swap-deals-2 .divider-che,
+.card.swap-deals-3 .divider-nat,
+.card.swap-deals-3 .divider-bad,
+.card.swap-deals-3 .divider-nam,
+.card.swap-deals-3 .divider-att,
+.card.swap-deals-3 .divider-che,
+.card.swap-deals-4 .divider-nat,
+.card.swap-deals-4 .divider-bad,
+.card.swap-deals-4 .divider-nam,
+.card.swap-deals-4 .divider-att,
+.card.swap-deals-4 .divider-che,
+.card.swap-deals-5 .divider-nat,
+.card.swap-deals-5 .divider-bad,
+.card.swap-deals-5 .divider-nam,
+.card.swap-deals-5 .divider-att,
+.card.swap-deals-5 .divider-che,
+.card.swap-deals-6 .divider-nat,
+.card.swap-deals-6 .divider-bad,
+.card.swap-deals-6 .divider-nam,
+.card.swap-deals-6 .divider-att,
+.card.swap-deals-6 .divider-che,
+.card.swap-deals-7 .divider-nat,
+.card.swap-deals-7 .divider-bad,
+.card.swap-deals-7 .divider-nam,
+.card.swap-deals-7 .divider-att,
+.card.swap-deals-7 .divider-che,
+.card.swap-deals-8 .divider-nat,
+.card.swap-deals-8 .divider-bad,
+.card.swap-deals-8 .divider-nam,
+.card.swap-deals-8 .divider-att,
+.card.swap-deals-8 .divider-che,
+.card.swap-deals-9 .divider-nat,
+.card.swap-deals-9 .divider-bad,
+.card.swap-deals-9 .divider-nam,
+.card.swap-deals-9 .divider-att,
+.card.swap-deals-9 .divider-che,
+.card.swap-deals-10 .divider-nat,
+.card.swap-deals-10 .divider-bad,
+.card.swap-deals-10 .divider-nam,
+.card.swap-deals-10 .divider-att,
+.card.swap-deals-10 .divider-che,
+.card.swap-deals-11 .divider-nat,
+.card.swap-deals-11 .divider-bad,
+.card.swap-deals-11 .divider-nam,
+.card.swap-deals-11 .divider-att,
+.card.swap-deals-11 .divider-che,
+.card.swap-deals-reward .divider-nat,
+.card.swap-deals-reward .divider-bad,
+.card.swap-deals-reward .divider-nam,
+.card.swap-deals-reward .divider-att,
+.card.swap-deals-reward .divider-che {
   background: #ffffff;
   opacity: 0.5;
 }
@@ -687,7 +753,7 @@ opacity: 0.8;
   background-image: url("../assets/cards/bronze-fut-champions.png");
 }
 
-.ucl-common,.ucl-rare,.ucl-live,.ucl-motm,.ucl-sbc,.ucl-tott,.futmas,.bundesliga-potm {
+.ucl-common,.ucl-rare,.ucl-live,.ucl-motm,.ucl-sbc,.ucl-tott,.futmas,.bundesliga-potm,.swap-deals-reward {
   color: #ffffff;
 }
 
@@ -827,7 +893,76 @@ opacity: 0.8;
 
 /*----------------------------------------------------------------------------*/
 
-.card::after {
+.swap-deals-1 {
+  color: #04b3c4;
+  background-image: url("../assets/cards/swap-deals-1.png");
+}
+
+.swap-deals-2 {
+  color: #00b377;
+  background-image: url("../assets/cards/swap-deals-2.png");
+}
+
+.swap-deals-3 {
+  color: #87c546;
+  background-image: url("../assets/cards/swap-deals-3.png");
+}
+
+.swap-deals-4 {
+  color: #04b3c4;
+  background-image: url("../assets/cards/swap-deals-4.png");
+}
+
+.swap-deals-5 {
+  color: #04b3c4;
+  background-image: url("../assets/cards/swap-deals-5.png");
+}
+
+.swap-deals-6 {
+  color: #04b3c4;
+  background-image: url("../assets/cards/swap-deals-6.png");
+}
+
+.swap-deals-7 {
+  color: #04b3c4;
+  background-image: url("../assets/cards/swap-deals-7.png");
+}
+
+.swap-deals-8 {
+  color: #04b3c4;
+  background-image: url("../assets/cards/swap-deals-8.png");
+}
+
+.swap-deals-9 {
+  color: #04b3c4;
+  background-image: url("../assets/cards/swap-deals-9.png");
+}
+
+.swap-deals-10 {
+  color: #04b3c4;
+  background-image: url("../assets/cards/swap-deals-10.png");
+}
+
+.swap-deals-11 {
+  color: #04b3c4;
+  background-image: url("../assets/cards/swap-deals-11.png");
+}
+
+.swap-deals-reward {
+  background-image: url("../assets/cards/swap-deals-reward.png");
+}
+
+/*----------------------------------------------------------------------------*/
+
+.card-mini.empty {
+  background-image: url("../assets/cards/mini/empty.png");
+}
+
+.card-mini.gold-rare {
+  background-image: url("../assets/cards/mini/gold-rare.png");
+}
+
+/*.card::after {
 	content:'';
   top:0;
 	transform:translateX(100%);
@@ -837,21 +972,18 @@ opacity: 0.8;
 	z-index:1;
 	animation: slide 3s infinite 3s;
 
-  /*
-  CSS Gradient - complete browser support from http://www.colorzilla.com/gradient-editor/
-  */
-  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(128,186,232,0) 99%, rgba(125,185,232,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.5)), color-stop(99%,rgba(128,186,232,0)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* IE10+ */
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(128,186,232,0) 99%, rgba(125,185,232,0) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.5)), color-stop(99%,rgba(128,186,232,0)), color-stop(100%,rgba(125,185,232,0)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.5) 50%,rgba(128,186,232,0) 99%,rgba(125,185,232,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#007db9e8',GradientType=1 );
 }
 
-/* animation */
 
 @keyframes slide {
 	0% {transform:translateX(-100%);}
 	100% {transform:translateX(100%);}
-}
+}*/

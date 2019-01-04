@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/pitch.css">
     <title>FIFA 19</title>
   </head>
   <body>
@@ -86,7 +87,7 @@
       </select>
       <br>
 
-      <div id="card1" class="card card-lg ultimate-scream" style="margin-top:10px">
+      <div id="card1" class="card card-lg gold-rare" style="margin-top:10px">
         <div class="divider-special"></div>
         <img class="player" src="assets/players/test.png">
         <img class="nation" src="assets/nations/83.png">
@@ -125,6 +126,59 @@
         <div class="divider-che"></div>
       </div>
     </div>
+
+    <div class="pitch">
+
+      <div class="position-1 card-mini">
+
+        <div class="card-base">
+          <div class="base-pos">
+            GK
+          </div>
+        </div>
+
+        <div class="card card-mini empty"></div>
+        <!--<div class="card card-sm gold-rare">
+          <div class="divider-special"></div>
+          <img class="player" src="assets/players/test.png">
+          <img class="nation" src="assets/nations/83.png">
+          <img class="badge" src="assets/badges/1878.png">
+          <div class="rating">
+            75
+          </div>
+          <div class="position">
+            cam
+          </div>
+          <div class="divider-nat"></div>
+          <div class="divider-bad"></div>
+          <div class="name">
+            alvarado
+          </div>
+          <div class="divider-nam"></div>
+          <div class="divider-att"></div>
+          <div class="pace">
+            82
+          </div>
+          <div class="shooting">
+            69
+          </div>
+          <div class="passing">
+            72
+          </div>
+          <div class="dribbling">
+            79
+          </div>
+          <div class="defending">
+            19
+          </div>
+          <div class="physical">
+            54
+          </div>
+          <div class="divider-che"></div>
+        </div>-->
+      </div>
+    </div>
+
 
     <script type="text/javascript">
       console.log("works!");
