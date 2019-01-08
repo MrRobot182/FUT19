@@ -127,8 +127,8 @@
       </div>
     </div>
 
-    <div class="pitch">
-
+    <div class="pitch f-442">
+      <canvas id="chem-lines" class="f-442" width="1200" height="675"></canvas>
       <div class="position-1">
         <div class="card-base">
           <div class="base-pos wrong-pos">
@@ -149,7 +149,7 @@
         </div>
       </div>
 
-      <div class="position-2 f-422">
+      <div class="position-2">
         <div class="card-base">
           <div class="base-pos">
             rb
@@ -159,7 +159,7 @@
         </div>
       </div>
 
-      <div class="position-3 f-422">
+      <div class="position-3">
         <div class="card-base">
           <div class="base-pos">
             cb
@@ -169,7 +169,7 @@
         </div>
       </div>
 
-      <div class="position-4 f-422">
+      <div class="position-4">
         <div class="card-base">
           <div class="base-pos">
             cb
@@ -179,7 +179,7 @@
         </div>
       </div>
 
-      <div class="position-5 f-422">
+      <div class="position-5">
         <div class="card-base">
           <div class="base-pos">
             lb
@@ -189,7 +189,7 @@
         </div>
       </div>
 
-      <div class="position-6 f-422">
+      <div class="position-6">
         <div class="card-base">
           <div class="base-pos">
             rm
@@ -199,7 +199,7 @@
         </div>
       </div>
 
-      <div class="position-7 f-422">
+      <div class="position-7">
         <div class="card-base">
           <div class="base-pos">
             cm
@@ -209,7 +209,7 @@
         </div>
       </div>
 
-      <div class="position-8 f-422">
+      <div class="position-8">
         <div class="card-base">
           <div class="base-pos">
             cm
@@ -219,7 +219,7 @@
         </div>
       </div>
 
-      <div class="position-9 f-422">
+      <div class="position-9">
         <div class="card-base">
           <div class="base-pos">
             lm
@@ -229,7 +229,7 @@
         </div>
       </div>
 
-      <div class="position-10 f-422">
+      <div class="position-10">
         <div class="card-base">
           <div class="base-pos">
             st
@@ -239,7 +239,7 @@
         </div>
       </div>
 
-      <div class="position-11 f-422">
+      <div class="position-11">
         <div class="card-base">
           <div class="base-pos">
             st
@@ -263,6 +263,10 @@
       function asignaCarta(){
         document.getElementById("card1").className = "card " + size.value + " " + cardType.value;
       }
+    </script>
+
+    <script type="text/javascript" src="js/pitch-chem-lines.js">
+
     </script>
 
   </body>
