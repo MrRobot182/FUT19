@@ -87,13 +87,13 @@
       </select>
       <br>
 
-      <div id="card1" class="card card-lg gold-rare" style="margin-top:10px">
+      <div id="card1" class="card card-lg toty" style="margin-top:10px">
         <div class="divider-special"></div>
-        <img class="player" src="assets/players/test.png">
+        <img class="player" src="assets/players/158023.png">
         <img class="nation" src="assets/nations/83.png">
         <img class="badge" src="assets/badges/1878.png">
         <div class="rating">
-          75
+          94
         </div>
         <div class="position">
           cam
@@ -101,27 +101,27 @@
         <div class="divider-nat"></div>
         <div class="divider-bad"></div>
         <div class="name">
-          alvarado
+          messi
         </div>
         <div class="divider-nam"></div>
         <div class="divider-att"></div>
         <div class="pace">
-          82
+          88
         </div>
         <div class="shooting">
-          69
+          91
         </div>
         <div class="passing">
-          72
+          88
         </div>
         <div class="dribbling">
-          79
+          96
         </div>
         <div class="defending">
-          19
+          32
         </div>
         <div class="physical">
-          54
+          61
         </div>
         <div class="divider-che"></div>
       </div>
@@ -131,17 +131,17 @@
 
       <div class="position-1">
         <div class="card-base">
-          <div class="base-pos">
+          <div class="base-pos wrong-pos">
             gk
           </div>
         </div>
-        <div class="card card-mini gold-rare">
+        <div class="card card-mini toty">
           <div class="divider-special"></div>
-          <img class="player" src="assets/players/test.png">
+          <img class="player" src="assets/players/158023.png">
           <img class="nation" src="assets/nations/83.png">
           <img class="badge" src="assets/badges/1878.png">
           <div class="rating">
-            75
+            94
           </div>
           <div class="position">
             cam
@@ -253,19 +253,15 @@
 
 
     <script type="text/javascript">
-      console.log("works!");
-      document.getElementById("card-type").onchange = function() { asignaCarta() };
-      document.getElementById("size").onchange = function() { asignaCarta() };
+      console.log("...");
+      var size = document.getElementById("size");
+      var cardType = document.getElementById("card-type");
+
+      size.onchange = function() { asignaCarta() };
+      cardType.onchange = function() { asignaCarta() };
 
       function asignaCarta(){
-        var size = document.getElementById("size").value;
-        var cardType = document.getElementById("card-type").value;
-        document.getElementById("card1").className = "card " + size + " " + cardType;
-        if (cardType == "ucl-live"){
-          var divSpecial = document.createElement("div");
-          var card = document.getElementById("card1");
-          document.body.insertBefore(divSpecial, card);
-        }
+        document.getElementById("card1").className = "card " + size.value + " " + cardType.value;
       }
     </script>
 

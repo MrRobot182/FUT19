@@ -36,32 +36,33 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  font-family:'Arial';
+  font-weight: bold;
   width: 60px;
   height: 31px;
   top: 90%;
   left: 16%;
-  font-family:'Arial';
-  color: white;
+  color: #cccccc;
 }
 
 .pitch .card-base .base-pos{
   width: 100%;
-  top: 52%;
-  font-size: 10px;
+  top: 56%;
+  font-size: 9px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .pitch .card-base .base-pos.same-pos {
-  color: #70d73a;
+  color: #58ff00;
 }
 
 .pitch .card-base .base-pos.different-pos {
-  color: #be9126;
+  color: #ffc600;
 }
 
 .pitch .card-base .base-pos.wrong-pos {
-  color: #b72743;
+  color: #ff1e03;
 }
 
 .pitch .position-1 {

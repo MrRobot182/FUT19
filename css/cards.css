@@ -69,32 +69,32 @@ img.player,img.nation,img.badge,.rating,.position,.name,
   width: 17px;
   top: 21%;
   font-size: 18px;
-  left: 8.5%;
+  left: 10%;
   font-weight: lighter;
 }
 
 .card.card-mini .position {
   width: 17px;
   top: 36%;
-  left: 8.5%;
+  left: 10%;
   font-size: 10px;
 }
 
 .card.card-mini img.player {
-  top: 19%;
+  top: 20.2%;
   left: 28%;
   width: 70%;
 }
 
 .card.card-mini img.nation {
   top: 47%;
-  left: 10.5%;
+  left: 12.2%;
   width: 16%;
 }
 
 .card.card-mini img.badge {
   top: 56%;
-  left: 10%;
+  left: 11.4%;
   width: 18%;
 }
 
@@ -303,7 +303,8 @@ img.player,img.nation,img.badge,.rating,.position,.name,
 .card.uel-tott .divider-special,
 .card.hero .divider-special,
 .card.ultimate-scream .divider-special,
-.card.swap-deals-reward .divider-special {
+.card.swap-deals-reward .divider-special,
+.card.toty .divider-special {
   top: 10%;
   left: 12.3%;
   width: 20%;
@@ -391,6 +392,12 @@ img.player,img.nation,img.badge,.rating,.position,.name,
   width: 20%;
   height: 50%;
   background: linear-gradient(180deg, rgba(79,28,162,0) 10%, rgba(79,28,162,0.65) 64%, rgba(79,28,162,0.55) 89%, rgba(79,28,162,0.05) 100%);
+}
+
+/*Dividers cartas mini*/
+
+.card.card-mini .divider-special{
+  display: none;
 }
 
 /*Colores dividers*/
@@ -714,6 +721,15 @@ img.player,img.nation,img.badge,.rating,.position,.name,
   opacity: 0.5;
 }
 
+.card.toty .divider-nat,
+.card.toty .divider-bad,
+.card.toty .divider-att,
+.card.toty .divider-nam,
+.card.toty .divider-che {
+  background: #dbcb75;
+  opacity: 0.5;
+}
+
 /* No funciona :(
 .card-gold-rare :matches(.divider-nat,.divider-bad,.divider-nam,.divider-att,.divider-che) {
 background: linear-gradient(to right, rgba(102,92,8,0.3) 0%,rgba(102,92,8,0.8) 15%,rgba(102,92,8,1) 19%,rgba(56,44,4,1) 51%,rgba(102,92,8,1) 81%,rgba(102,92,8,0.8) 85%,rgba(102,92,8,0.3) 100%);
@@ -992,7 +1008,13 @@ opacity: 0.8;
   background-image: url("../assets/cards/swap-deals-reward.png");
 }
 
+.toty {
+  color: #dbcb75;
+  background-image: url("../assets/cards/toty.png");
+}
+
 /*----------------------------------------------------------------------------*/
+/*Mini*/
 
 .card-mini.empty {
   background-image: url("../assets/cards/mini/empty.png");
@@ -1000,6 +1022,210 @@ opacity: 0.8;
 
 .card-mini.gold-rare {
   background-image: url("../assets/cards/mini/gold-rare.png");
+}
+
+.card-mini.silver-rare {
+  background-image: url("../assets/cards/mini/silver-rare.png");
+}
+
+.card-mini.bronze-rare {
+  background-image: url("../assets/cards/mini/bronze-rare.png");
+}
+
+.card-mini.gold-common {
+  background-image: url("../assets/cards/mini/gold-common.png");
+}
+
+.card-mini.silver-common {
+  background-image: url("../assets/cards/mini/silver-common.png");
+}
+
+.card-mini.bronze-common {
+  background-image: url("../assets/cards/mini/bronze-common.png");
+}
+
+.card-mini.gold-if {
+  background-image: url("../assets/cards/mini/gold-if.png");
+}
+
+.card-mini.silver-if {
+  background-image: url("../assets/cards/mini/silver-if.png");
+}
+
+.card-mini.bronze-if {
+  background-image: url("../assets/cards/mini/bronze-if.png");
+}
+
+.card-mini.gold-fut-champions {
+  background-image: url("../assets/cards/mini/gold-fut-champions.png");
+}
+
+.card-mini.silver-fut-champions {
+  background-image: url("../assets/cards/mini/silver-fut-champions.png");
+}
+
+.card-mini.bronze-fut-champions {
+  background-image: url("../assets/cards/mini/bronze-fut-champions.png");
+}
+
+.card-mini.ucl-common {
+  background-image: url("../assets/cards/mini/ucl-common.png");
+}
+
+.card-mini.ucl-rare {
+  background-image: url("../assets/cards/mini/ucl-rare.png");
+}
+
+.card-mini.ucl-live {
+  background-image: url("../assets/cards/mini/ucl-live.png");
+}
+
+.card-mini.ucl-motm {
+  background-image: url("../assets/cards/mini/ucl-motm.png");
+}
+
+.card-mini.ucl-sbc {
+  background-image: url("../assets/cards/mini/ucl-sbc.png");
+}
+
+.card-mini.ucl-tott {
+  background-image: url("../assets/cards/mini/ucl-tott.png");
+}
+
+.card-mini.uel {
+  background-image: url("../assets/cards/mini/uel.png");
+}
+
+.card-mini.uel-live {
+  background-image: url("../assets/cards/mini/uel-live.png");
+}
+
+.card-mini.uel-motm {
+  background-image: url("../assets/cards/mini/uel-motm.png");
+}
+
+.card-mini.uel-sbc {
+  background-image: url("../assets/cards/mini/uel-sbc.png");
+}
+
+.card-mini.uel-tott {
+  background-image: url("../assets/cards/mini/uel-tott.png");
+}
+
+/*----------------------------------------------------------------------------*/
+
+.card-mini.flashback {
+  background-image: url("../assets/cards/mini/flashback.png");
+}
+
+.card-mini.futtie {
+  background-image: url("../assets/cards/mini/futtie.png");
+}
+
+.card-mini.futmas {
+  background-image: url("../assets/cards/mini/futmas.png");
+}
+
+.card-mini.hero {
+  background-image: url("../assets/cards/mini/hero.png");
+}
+
+.card-mini.icon {
+  background-image: url("../assets/cards/mini/icon.png");
+}
+
+.card-mini.motm {
+  background-image: url("../assets/cards/mini/motm.png");
+}
+
+.card-mini.otw {
+  background-image: url("../assets/cards/mini/ones-to-watch.png");
+}
+
+.card-mini.pro {
+  background-image: url("../assets/cards/mini/pro-player.png");
+}
+
+.card-mini.premium-sbc {
+  background-image: url("../assets/cards/mini/premium-sbc.png");
+}
+
+.card-mini.record-breaker {
+  background-image: url("../assets/cards/mini/record-breaker.png");
+}
+
+.card-mini.sbc {
+  background-image: url("../assets/cards/mini/sbc.png");
+}
+
+.card-mini.premier-league-potm {
+  background-image: url("../assets/cards/mini/premier-league-potm.png");
+}
+
+.card-mini.bundesliga-potm {
+  background-image: url("../assets/cards/mini/bundesliga-potm.png");
+}
+
+.card-mini.award-winner {
+  background-image: url("../assets/cards/mini/award-winner.png");
+}
+
+.card-mini.ultimate-scream {
+  background-image: url("../assets/cards/mini/ultimate-scream.png");
+}
+
+/*----------------------------------------------------------------------------*/
+
+.card-mini.swap-deals-1 {
+  background-image: url("../assets/cards/mini/swap-deals-1.png");
+}
+
+.card-mini.swap-deals-2 {
+  background-image: url("../assets/cards/mini/swap-deals-2.png");
+}
+
+.card-mini.swap-deals-3 {
+  background-image: url("../assets/cards/mini/swap-deals-3.png");
+}
+
+.card-mini.swap-deals-4 {
+  background-image: url("../assets/cards/mini/swap-deals-4.png");
+}
+
+.card-mini.swap-deals-5 {
+  background-image: url("../assets/cards/mini/swap-deals-5.png");
+}
+
+.card-mini.swap-deals-6 {
+  background-image: url("../assets/cards/mini/swap-deals-6.png");
+}
+
+.card-mini.swap-deals-7 {
+  background-image: url("../assets/cards/mini/swap-deals-7.png");
+}
+
+.card-mini.swap-deals-8 {
+  background-image: url("../assets/cards/mini/swap-deals-8.png");
+}
+
+.card-mini.swap-deals-9 {
+  background-image: url("../assets/cards/mini/swap-deals-9.png");
+}
+
+.card-mini.swap-deals-10 {
+  background-image: url("../assets/cards/mini/swap-deals-10.png");
+}
+
+.card-mini.swap-deals-11 {
+  background-image: url("../assets/cards/mini/swap-deals-11.png");
+}
+
+.card-mini.swap-deals-reward {
+  background-image: url("../assets/cards/mini/swap-deals-reward.png");
+}
+
+.card-mini.toty {
+  background-image: url("../assets/cards/mini/toty.png");
 }
 
 /*.card::after {
